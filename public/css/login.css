@@ -1,0 +1,41 @@
+.navbar{
+    position: relative;
+    z-index: 1;
+    background-color: black;
+}
+.nav-link:hover{
+    color: gold !important;
+    border-bottom: 1px solid goldenrod;
+    margin-bottom: -2px;
+}
+.nav-link{
+    color: white !important;
+    text-shadow: black;
+}
+.navbar-brand{
+    font-family: 'Sriracha';
+    font-size: 2rem;
+}
+.login a{
+    background-color: goldenrod;
+    border-radius: 5px;
+    color: black !important;
+    text-align: center ;
+}
+.col-md-5{
+    height: 400px;
+}
+img{
+    width: 600px;
+    object-fit: cover;
+}
+input{
+    border: none !important;
+    border-bottom: rgb(186, 186, 186) solid!important;
+}
+
+@media only screen and (max-width: 767px){
+    .navbar{
+        background-color: black;
+    }
+}

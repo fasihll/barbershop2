@@ -1,0 +1,242 @@
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    position: relative;
+    z-index: 1;
+}
+.nav-link:hover{
+    color: gold !important;
+    border-bottom: 1px solid goldenrod;
+    margin-bottom: -2px;
+}
+.nav-link{
+    color: white !important;
+    text-shadow: black;
+}
+.navbar-brand{
+    font-family: 'Sriracha';
+    font-size: 2rem;
+}
+.login a{
+    background-color: goldenrod;
+    border-radius: 5px;
+    color: black !important;
+    text-align: center ;
+}
+.sosmed{
+    position: relative;
+    display: flex;
+}
+
+/* jumbotron */
+.jumbotron img{
+    background-size: cover;
+
+    position: absolute;
+    display: block;
+}
+.jumbotron{
+    margin-top: -200px;
+    display: block;
+    height: 800px;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+.jumbotron .display-4{
+    color: white !important;
+    text-align: left;
+    text-align: center;
+    margin-top: 300px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.button-banner{
+    border-radius: 50px;
+}
+.button-banner:hover {
+    background-color: none !important;
+}
+.jumbotron .container{
+    position: relative;
+    z-index: 1;
+}
+.jumbotron::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    bottom: 0;
+    background-image: linear-gradient(to top, rgba(0,0,0,1),rgba(0,0,0,0));
+}
+
+/* jumbotron */
+
+    /* toggle */
+    .toggle-up{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        background-color: goldenrod;
+        margin: 15px;
+        padding: 5px;
+    }
+    .toggle-up a{
+        text-decoration: none;
+        color: black;
+    }
+
+/* about */
+.about{
+    margin-bottom: 100px;
+
+}
+.about::after{
+    content: '';
+    border-bottom: 4px solid black !important;
+    display: block;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.testimoni::after {
+    content: '';
+    border-bottom: 4px solid black !important;
+    display: block;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hairstyle::after {
+    content: '';
+    border-bottom: 4px solid black !important;
+    display: block;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about{
+    padding-bottom: 70px;
+    padding-top: 50px;
+    background: linear-gradient(to top right, rgb(151, 107, 10) 30%, #fff 30%);
+}
+.border{
+        width: 400px;
+        height: 400px;
+        overflow: hidden;
+        border-radius: 30px;
+        align-items: center;
+        display: flex;
+        border: black solid;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.about-img{
+    max-width: 100%;
+    transition-property: max-width;
+    transition-duration: 2s;
+}
+.about-img:hover{
+   max-width: 120%;
+}
+
+
+/* about */
+
+/* testimoni carousel */
+    #testimoni .single-box {
+        position: relative;
+        margin-bottom: 15px;
+    }
+       #testimoni .img-area {
+           position: absolute;
+           width: 100px;
+           height: 100px;
+           border: 5px solid white;
+           overflow: hidden;
+           top: 15px;
+           left: 125px;
+           display: block;
+           border-radius: 100px;
+       }
+        #testimoni .img-text {
+            width: 100%;
+            height: 350px;
+            color: white;
+            background-color: goldenrod;
+            text-align: center;
+            border-radius: 15px;
+            display: block;
+            padding: 40% 5%;
+        }
+       #testimoni .img-area img{
+        width: 100%;
+       }
+        #testimoni .carousel-indicators {
+            display: none;
+        }
+/* testimoni carousel */
+
+#hairstyle{
+     padding-bottom: 70px;
+     padding-top: 50px;
+}
+footer{
+    background: linear-gradient(to top ,black 1%,rgb(130, 99, 20) 99%);
+}
+footer h3::after{
+    content:'';
+    display: block;
+    border-bottom: 4px solid white;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+}
+footer ul li{
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 2px white solid !important;
+    color: white;
+}
+.sosmed{
+    border: none !important;
+}
+.sosmed i{
+    margin-right: 50px !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sosmed i:hover {
+    color: gold;
+}
+
+@media only screen and (max-width: 767px){
+    .navbar{
+        background-color: black;
+    }
+    .sosmed-link{
+        margin-right: 10px;
+    }
+    .banner{
+
+        height: 100% !important;
+    }
+
+    /* about */
+    .border{
+        width: 300px;
+        height: 300px;
+    }
+    .about{
+       margin-bottom: 40px;
+    }
+    .border{
+        margin-bottom: 50px;
+    }
+    /* about */
+}

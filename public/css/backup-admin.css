@@ -1,0 +1,48 @@
+.wrapper{
+    display: flex;
+}
+.sidebar{
+     min-width: 250px;
+     max-width: 250px;
+     min-height: 100vh;
+     
+}
+.sidebar-header h3{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: goldenrod !important;
+}
+
+.profil{
+    display: block;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px rgb(100, 100, 100) solid;
+}
+.profil .img{
+    float: left;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.sidebar ul li a {
+    display: block;
+    text-align: left;
+    padding-left: 50px !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    text-decoration: none;
+}
+.sidebar ul li a:hover {
+    background-color: rgb(51, 51, 51);
+    border-right: goldenrod solid 5px !important;
+    
+}
+.content{
+    width: 100%;
+}
